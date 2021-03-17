@@ -133,6 +133,7 @@ class CharacterCell: UITableViewCell {
     
 }
 
+// MARK: - Model
 
 class Character {
     

@@ -26,8 +26,8 @@ class ConnectionPrompt: NSObject {
     fileprivate var postData: [NameValue2]!, fileData: [NameValue2]!
     fileprivate var timer: Timer!
 
-    var delegate: ConnectionDelegate!
-    var updateDelegate: ConnectionUpdateDelegate!
+    var delegate: ConnectionPromptDelegate!
+    var updateDelegate: ConnectionPromptUpdateDelegate!
 
     typealias completionClosure = (_ result: String) -> Void
     typealias lostClosure = () -> Void
@@ -110,14 +110,11 @@ class ConnectionPrompt: NSObject {
         }
         let latitude = appPreference.getValueDouble(AppPreference.latitude)
         let longitude = appPreference.getValueDouble(AppPreference.longitude)
-        let timeStamp = Date.currentTimeStamp
         let registerId = appPreference.getValueString(AppPreference.registerId)
-        let memberId = "1" //appPreference.getValueString(AppPreference.memberId)
         
         addPostData("key", value: Constant.API_KEY)
         addPostData("authenkey", value: Constant.API_KEY_Node)
         addPostData("lang", value: language)
-        addPostData("timestamp", value: String(timeStamp))
         if useGPS {
             addPostData("latitude", value: String(latitude))
             addPostData("longitude", value: String(longitude))
@@ -125,16 +122,12 @@ class ConnectionPrompt: NSObject {
         
         request.addValue(language, forHTTPHeaderField: "lang")
         request.addValue(Constant.API_KEY_Node, forHTTPHeaderField: "authenkey")
-        request.addValue(String(timeStamp), forHTTPHeaderField: "timestamp")
         
         let modelName = UIDevice.modelName
-        let os =  UIDevice.current.systemName
         let version = UIDevice.current.systemVersion
         let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         let uid = UIDevice.current.identifierForVendor!.uuidString
-        //let requestDateEncode = "{\"brand\":\"\(Constant.BRAND)\",\"model\":\"\(modelName)\",\"os\":\"\(os)\",\"version\":\"\(version)\",\"app_version\":\"\(appVersion)\",\"device_id\":\"\(uid)\",\"device_token\":\"\(registerId)\"}"
 
-//        addPostData("member_id", value: memberId)
         addPostData("brand", value: Constant.BRAND)
         addPostData("model", value: modelName)
         addPostData("os", value: "ios")
@@ -142,9 +135,7 @@ class ConnectionPrompt: NSObject {
         addPostData("app_version", value: appVersion!)
         addPostData("device_id", value: uid)
         addPostData("device_token", value: registerId)
-        
-        //addPostData("request_data", value: requestDateEncode.base64Encoded()!)
-
+    
         //  Check if upload file
         let body = NSMutableData()
         let encryptString: String

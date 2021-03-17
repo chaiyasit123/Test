@@ -80,7 +80,6 @@
 		B244A14826020BE200F076D4 /* AppPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A10A26020BE200F076D4 /* AppPreference.swift */; };
 		B244A14926020BE200F076D4 /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A10B26020BE200F076D4 /* WebAPI.swift */; };
 		B244A14A26020BE200F076D4 /* SearchPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A10C26020BE200F076D4 /* SearchPreference.swift */; };
-		B244A14C26020D1100F076D4 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A14B26020D1100F076D4 /* Connection.swift */; };
 		B244A14E2602154000F076D4 /* CharacterDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A14D2602154000F076D4 /* CharacterDetailController.swift */; };
 		B244A1502602176B00F076D4 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244A14F2602176B00F076D4 /* SplashController.swift */; };
 /* End PBXBuildFile section */
@@ -186,7 +185,6 @@
 		B244A10A26020BE200F076D4 /* AppPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPreference.swift; sourceTree = "<group>"; };
 		B244A10B26020BE200F076D4 /* WebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		B244A10C26020BE200F076D4 /* SearchPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPreference.swift; sourceTree = "<group>"; };
-		B244A14B26020D1100F076D4 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		B244A14D2602154000F076D4 /* CharacterDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailController.swift; sourceTree = "<group>"; };
 		B244A14F2602176B00F076D4 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		BFBF916833526FB7E0D29C03 /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -327,7 +325,6 @@
 		B244A0C426020BE100F076D4 /* Net */ = {
 			isa = PBXGroup;
 			children = (
-				B244A14B26020D1100F076D4 /* Connection.swift */,
 				B244A0C626020BE100F076D4 /* ConnectionPrompt.swift */,
 				B244A0C726020BE100F076D4 /* MCrypt.swift */,
 			);
@@ -753,7 +750,6 @@
 				B244A12E26020BE200F076D4 /* MMSlidingButton.swift in Sources */,
 				B244A13F26020BE200F076D4 /* DeviceHelper.swift in Sources */,
 				B244A11726020BE200F076D4 /* Label.swift in Sources */,
-				B244A14C26020D1100F076D4 /* Connection.swift in Sources */,
 				B244A14126020BE200F076D4 /* CurrencyHelper.swift in Sources */,
 				B244A10D26020BE200F076D4 /* SwiftyJSON.swift in Sources */,
 				B244A14926020BE200F076D4 /* WebAPI.swift in Sources */,

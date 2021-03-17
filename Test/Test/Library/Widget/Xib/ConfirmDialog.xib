@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OPSBold.otf">
+            <string>OPS-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmDialog" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelBtn" destination="CqU-OQ-BMH" id="tO0-oq-ztW"/>
+                <outlet property="messageLabel" destination="wQB-WE-VQX" id="Wpb-7p-epG"/>
+                <outlet property="okBtn" destination="ygy-9Q-phP" id="3Nd-RH-wRy"/>
+                <outlet property="titleLabel" destination="gyD-5B-NEm" id="sUZ-B3-8O3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConfirmDialog" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6S-P7-Sbt" customClass="View" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                    <rect key="frame" x="16" y="268" width="343" height="157"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ขออภัย" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyD-5B-NEm" customClass="Label" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                            <rect key="frame" x="9" y="2" width="327" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Uzt-JK-E1G"/>
+                                <constraint firstAttribute="width" constant="327" id="jXu-Tj-Eaw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OPS-Bold" family="OPS" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="dialog_title"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="OPS-Bold"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeader" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="รหัส OTP ไม่ถูกต้อง กรุณาใส่รหัส OTP ใหม่อีกครั้ง " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQB-WE-VQX" customClass="Label" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                            <rect key="frame" x="9" y="8" width="327" height="59"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="59" id="eov-9M-hYe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                    <real key="value" value="18"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeader" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CqU-OQ-BMH" customClass="Button" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                            <rect key="frame" x="47.5" y="84" width="120" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="FIN-M4-kJc"/>
+                                <constraint firstAttribute="height" constant="50" id="Z8o-ek-mg0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OPS-Bold" family="OPS" pointSize="20"/>
+                            <state key="normal" title="ตกลง">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="btn_ok"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeader" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onOKBtnTapped:" destination="-1" eventType="touchUpInside" id="Zjc-kX-xBT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygy-9Q-phP" customClass="Button" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                            <rect key="frame" x="180.5" y="84" width="120" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="W0O-Rr-Qfy"/>
+                                <constraint firstAttribute="height" constant="50" id="hFV-qf-UIa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="OPS-Bold" family="OPS" pointSize="20"/>
+                            <state key="normal" title="ตกลง">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="btn_cancel"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isVerticalGradient" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isHeader" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCancelBtnTapped:" destination="-1" eventType="touchUpInside" id="Hgj-Yo-zxk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="CqU-OQ-BMH" secondAttribute="bottom" constant="23" id="D2n-Jr-Ary"/>
+                        <constraint firstItem="ygy-9Q-phP" firstAttribute="leading" secondItem="CqU-OQ-BMH" secondAttribute="trailing" constant="13" id="INz-4j-hd0"/>
+                        <constraint firstItem="gyD-5B-NEm" firstAttribute="top" secondItem="O6S-P7-Sbt" secondAttribute="top" constant="2" id="OjG-hB-zVZ"/>
+                        <constraint firstItem="wQB-WE-VQX" firstAttribute="centerX" secondItem="CqU-OQ-BMH" secondAttribute="centerX" constant="65" id="UIp-s0-LEy"/>
+                        <constraint firstItem="ygy-9Q-phP" firstAttribute="baseline" secondItem="CqU-OQ-BMH" secondAttribute="baseline" id="Wma-Tg-Uko"/>
+                        <constraint firstItem="wQB-WE-VQX" firstAttribute="leading" secondItem="gyD-5B-NEm" secondAttribute="leading" id="amT-io-MpF"/>
+                        <constraint firstItem="wQB-WE-VQX" firstAttribute="trailing" secondItem="gyD-5B-NEm" secondAttribute="trailing" id="b81-lS-vab"/>
+                        <constraint firstItem="gyD-5B-NEm" firstAttribute="centerX" secondItem="O6S-P7-Sbt" secondAttribute="centerX" constant="1" id="f4n-U8-EdO"/>
+                        <constraint firstItem="CqU-OQ-BMH" firstAttribute="top" secondItem="wQB-WE-VQX" secondAttribute="bottom" constant="17" id="sMm-fx-hUz"/>
+                        <constraint firstItem="wQB-WE-VQX" firstAttribute="top" secondItem="gyD-5B-NEm" secondAttribute="bottom" constant="-34" id="v24-KY-wkS"/>
+                        <constraint firstItem="wQB-WE-VQX" firstAttribute="leading" secondItem="gyD-5B-NEm" secondAttribute="leading" id="v4L-kd-Vvl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="157" id="vNG-wv-37y"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdN-53-GHm" customClass="Button" customModule="หนุ่มนำโชค___ค้าปลีก" customModuleProvider="target">
+                    <rect key="frame" x="288" y="184" width="48" height="48"/>
+                    <color key="backgroundColor" red="0.83921568629999999" green="0.21960784310000001" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="56n-uW-51p"/>
+                        <constraint firstAttribute="width" constant="48" id="Mvc-Ww-6Dt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onCloseBtnTapped:" destination="-1" eventType="touchUpInside" id="fpJ-Sx-thJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tdN-53-GHm" firstAttribute="top" secondItem="O6S-P7-Sbt" secondAttribute="top" constant="-84" id="3hD-q4-591"/>
+                <constraint firstAttribute="trailing" secondItem="O6S-P7-Sbt" secondAttribute="trailing" constant="16" id="CfF-Mt-xEs"/>
+                <constraint firstItem="tdN-53-GHm" firstAttribute="leading" secondItem="O6S-P7-Sbt" secondAttribute="trailing" constant="-71" id="TI4-WH-lNI"/>
+                <constraint firstItem="O6S-P7-Sbt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="13" id="go7-ZX-Y3I"/>
+                <constraint firstItem="O6S-P7-Sbt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="svB-MT-0tl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
